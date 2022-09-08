@@ -1,3 +1,5 @@
 env/
 static_collected/
-__pycache__
+hello/__pycache__
+hello/migration/__pycache__
+web_project/__pycache__
