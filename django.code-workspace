@@ -1,7 +1,8 @@
 {
 	"folders": [
 		{
-			"path": "."
+			"path": ".",
+			"name": "belajar-python-django-1"
 		}
 	],
 	"settings": {}
