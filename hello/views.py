@@ -7,8 +7,6 @@ from hello.forms import LogMessageForm
 from hello.models import LogMessage
 from ast import Not
 from queue import Empty
-import re
-
 
 # Create your views here.
 class HomeListView(ListView):
@@ -19,21 +17,28 @@ class HomeListView(ListView):
         context = super(HomeListView, self).get_context_data(**kwargs)
         return context
 
-# def home(request):
-#     return render(request, "hello/home.html")
-
 def about(request):
     return render(request, "hello/about.html")
 
 def contact(request):
     return render(request, "hello/contact.html")
 
-def hello_there(request):     
+def hello_there(request):
     return render(
         request,
         'hello/hello_there.html',
         {
             'name': "Mappasso",
+            'date': datetime.now()
+        }
+    )
+
+def xhello_there(request, name):
+    return render(
+        request,
+        'hello/hello_there.html',
+        {
+            'name': name,
             'date': datetime.now()
         }
     )
