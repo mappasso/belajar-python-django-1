@@ -15,4 +15,4 @@ urlpatterns = [
     path("hello/", views.hello_there, name="hello_there"),
     path("log/", views.log_message, name="log"),
     path("hello/<name>", views.xhello_there, name="xhello_there")
-]
+] 

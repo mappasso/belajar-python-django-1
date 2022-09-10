@@ -1,9 +1,5 @@
-env/
-static_collected/
+.venv/
 hello/__pycache__
-hello/migration/__pycache__
+hello/migrations/__pycache__
 web_project/__pycache__
-/Scripts
-/Lib/site-packages
-/hello/migrations/__pycache__
 
